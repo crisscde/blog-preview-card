@@ -89,7 +89,7 @@ body {
   background-color: var(--white);
   max-width: 384px;
   width: 87%;
-  border: 2px inset var(--gray-950);
+  border: 2px solid var(--gray-950);
   border-radius: 20px;
   padding: 24px;
   box-shadow: 8px 8px var(--gray-950);
@@ -133,6 +133,16 @@ body {
 .card__title {
   font-size: var(--fs-1);
   font-weight: var(--fw-800);
+  cursor: pointer;
+  transition: color 150ms linear;
+}
+
+.card__title:hover {
+  color: var(--yellow);
+}
+
+.card__description {
+  color: var(--gray-500);
 }
 
 .card__author {
