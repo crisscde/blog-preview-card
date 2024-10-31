@@ -11,4 +11,43 @@
   --fs-4: 0.875rem;
   --fw-500: 500;
   --fw-800: 800;
+  --font-family: 'Figtree', system-ui, -apple-system, sans-serif;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Figtree';
+  font-style: normal;
+  src: 
+    url("assets/fonts/figtree-semiBold.woff2") format('woff2'),
+    url("assets/fonts/figtree-semiBold.woff") format('woff'),
+    url("assets/fonts/figtree-semiBold.ttf") format('truetype');
+  font-height: var(--fw-500);
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Figtree';
+  font-style: normal;
+  src: 
+    url("assets/fonts/figtree-extrabold.woff2") format('woff2'),
+    url("assets/fonts/figtree-extrabold.woff") format('woff'),
+    url("assets/fonts/figtree-extrabold.ttf") format('truetype');
+  font-height: var(--fw-800);
+}
+
+@supports (font-variation-settings: normal) {
+  @font-face {
+    font-display: swap;
+    font-family: 'Figtree';
+    font-style: normal;
+    src: 
+      url("assets/fonts/figtree-semiBold.woff2") format(woff2) tech(variations),
+      url("assets/fonts/figtree-VF.woff2") format("woff2-variations"); 
+    font-height: 300 900;
+  }
+}
+
+body {
+  font-family: var(--font-family);
 }
