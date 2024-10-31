@@ -22,7 +22,7 @@
     url("assets/fonts/figtree-semiBold.woff2") format('woff2'),
     url("assets/fonts/figtree-semiBold.woff") format('woff'),
     url("assets/fonts/figtree-semiBold.ttf") format('truetype');
-  font-height: var(--fw-500);
+  font-weight: var(--fw-500);
 }
 
 @font-face {
@@ -33,7 +33,7 @@
     url("assets/fonts/figtree-extrabold.woff2") format('woff2'),
     url("assets/fonts/figtree-extrabold.woff") format('woff'),
     url("assets/fonts/figtree-extrabold.ttf") format('truetype');
-  font-height: var(--fw-800);
+  font-weight: var(--fw-800);
 }
 
 @supports (font-variation-settings: normal) {
@@ -44,7 +44,7 @@
     src: 
       url("assets/fonts/figtree-VF.woff2") format(woff2) tech(variations),
       url("assets/fonts/figtree-VF.woff2") format("woff2-variations"); 
-    font-height: 300 900;
+    font-weight: 300 900;
   }
 }
 
